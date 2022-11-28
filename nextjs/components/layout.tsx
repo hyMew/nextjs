@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
- 
+
 type Props = {
     children?: React.ReactNode
     title?: string
     description?: string
 }
- 
+
 export default function Layout({ children, title, description }: Props) {
     const pageTitle = title || 'ホームページタイトル'
     return (
