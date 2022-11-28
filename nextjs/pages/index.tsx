@@ -9,7 +9,9 @@ export default function Home() {
             description="ホームページ概要"
         >
             <p>ホームページコンテンツ</p>
-            <img className={styles.sampleImage} src="https://picsum.photos/400/300"></img>
+            <figure className={styles.sampleImage}>
+                <img src="//picsum.photos/400/300"></img>
+            </figure>
         </Layout>
     )
 }
