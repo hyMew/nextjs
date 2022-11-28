@@ -22,6 +22,7 @@ export default function Layout({ children, title, description }: Props) {
                 <ul>
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/about">About</Link></li>
+                    <li>こちらはテストです</li>
                 </ul>
             </nav>
             <main>{ children }</main>
