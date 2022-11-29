@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 import styles from '../styles/Home.module.css'
@@ -16,8 +17,11 @@ export default function Home() {
         >
             <p>ホームページコンテンツ</p>
             <p>いろいろテスト中です。</p>
+            <figure>
+                <Image src="/images/publicdomainq-0012862vrwktr.jpg" alt="test" width={300} height={150} objectFit="contain" />
+            </figure>
             <figure className={styles.sampleImage}>
-                <img src={imageUrl}></img>
+                <img src={imageUrl} />
             </figure>
         </Layout>
     )
