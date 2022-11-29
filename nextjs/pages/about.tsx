@@ -1,13 +1,13 @@
 import Head from 'next/head'
- 
+import Layout from '../components/layout'
+
 export default function About() {
     return (
-        <div>
-            <Head>
-                <title>自己紹介タイトル</title>
-                <meta name="description" content="自己紹介概要" />
-            </Head>
-            <h1>自己紹介タイトル</h1>
-        </div>
+        <Layout
+            title="about"
+            description="about概要"
+        >
+            <p>こちらは<span>about</span>テスト</p>
+        </Layout>
     )
 }
