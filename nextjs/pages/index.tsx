@@ -15,10 +15,10 @@ export default function Home() {
             title="ホームページタイトル"
             description="ホームページ概要"
         >
-            <p>ホームページコンテンツ</p>
+            <p className={styles.ptest}>ホームページコンテンツ</p>
             <p>いろいろテスト中です。</p>
             <figure>
-                <Image src="/images/publicdomainq-0012862vrwktr.jpg" alt="test" width={300} height={150} objectFit="contain" />
+                <Image src="/images/publicdomainq-0012862vrwktr.jpg" alt="test" width={300} objectFit="contain" />
             </figure>
             <figure className={styles.sampleImage}>
                 <img src={imageUrl} />
