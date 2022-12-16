@@ -1,0 +1,9 @@
+.sampleImage img {
+  border: 1px #000 solid;
+  margin: 1em auto;
+  padding: .5em;
+}
+
+.ptest {
+  margin: auto;
+}

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 import styles from '../styles/Home.module.css'
+import index from '../styles/index.module.css'
 import { useState } from "react"
 
 export default function Home() {
@@ -16,15 +17,13 @@ export default function Home() {
             description="ホームページ概要"
         >
             <div className={styles.contain}>
-                <figure className={styles.headImg}>
-                    <Image src="/images/pc-index.webp" alt="index Header"/>
-                </figure>
-                <p className={styles.ptest}>ホームページコンテンツ</p>
+                <p className={index.ptest}>ホームページコンテンツ</p>
                 <p>いろいろテスト中です。</p>
+                <Link href="//google.com">Google</Link>
                 <figure>
                     <Image src="/images/publicdomainq-0012862vrwktr.jpg" alt="test" width={300} objectFit="contain" />
                 </figure>
-                <figure className={styles.sampleImage}>
+                <figure className={index.sampleImage}>
                     <img src={imageUrl} />
                 </figure>
             </div>
