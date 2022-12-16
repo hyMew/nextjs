@@ -10,7 +10,7 @@ type Props = {
 export default function Layout({ children, title, description }: Props) {
     const pageTitle = title || 'ホームページタイトル'
     return (
-        <div className="wrap">
+        <div className="{styles.wrap}">
             <Head>
                 <title>{ pageTitle }</title>
                 <meta name="description" content={ description || 'ホームページ概要' } />

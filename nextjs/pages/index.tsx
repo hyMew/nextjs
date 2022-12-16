@@ -17,7 +17,6 @@ export default function Home() {
         >
             <p className={styles.ptest}>ホームページコンテンツ</p>
             <p>いろいろテスト中です。</p>
-            <p><textarea></textarea></p>
             <figure>
                 <Image src="/images/publicdomainq-0012862vrwktr.jpg" alt="test" width={300} objectFit="contain" />
             </figure>
