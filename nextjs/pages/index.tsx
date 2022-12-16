@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 import styles from '../styles/Home.module.css'
-import index from '../styles/index.module.css'
+import index from '../styles/index.module.scss'
 import { useState } from "react"
 
 export default function Home() {
