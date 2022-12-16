@@ -15,14 +15,19 @@ export default function Home() {
             title="ホームページタイトル"
             description="ホームページ概要"
         >
-            <p className={styles.ptest}>ホームページコンテンツ</p>
-            <p>いろいろテスト中です。</p>
-            <figure>
-                <Image src="/images/publicdomainq-0012862vrwktr.jpg" alt="test" width={300} objectFit="contain" />
-            </figure>
-            <figure className={styles.sampleImage}>
-                <img src={imageUrl} />
-            </figure>
+            <div className={styles.contain}>
+                <figure className={styles.headImg}>
+                    <Image src="/images/pc-index.webp" alt="index Header"/>
+                </figure>
+                <p className={styles.ptest}>ホームページコンテンツ</p>
+                <p>いろいろテスト中です。</p>
+                <figure>
+                    <Image src="/images/publicdomainq-0012862vrwktr.jpg" alt="test" width={300} objectFit="contain" />
+                </figure>
+                <figure className={styles.sampleImage}>
+                    <img src={imageUrl} />
+                </figure>
+            </div>
         </Layout>
     )
 }
