@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../styles/style.module.scss'
 
 type Props = {
     children?: React.ReactNode
@@ -11,7 +10,7 @@ type Props = {
 export default function Layout({ children, title, description }: Props) {
     const pageTitle = title || 'ホームページタイトル'
     return (
-        <div className="{styles.wrap}">
+        <div>
             <Head>
                 <title>{ pageTitle }</title>
                 <meta name="description" content={ description || 'ホームページ概要' } />
@@ -20,7 +19,7 @@ export default function Layout({ children, title, description }: Props) {
             <header>
                 <h1>{ pageTitle }</h1>
             </header>
-            <nav className="{styles.nav}">
+            <nav>
                 <ul>
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/about">About</Link></li>
