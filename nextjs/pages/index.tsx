@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/style.module.css'
 import index from '../styles/index.module.scss'
 import { useState } from "react"
 
@@ -17,6 +17,9 @@ export default function Home() {
             description="ホームページ概要"
         >
             <div className={styles.contain}>
+                <figure className={index.header}>
+                    <Image src="/images/austin-ramsey-IvzvlKQwjk8-unsplash" alt="sample" />
+                </figure>
                 <p className={index.ptest}>ホームページコンテンツ</p>
                 <p>いろいろテスト中です。</p>
                 <Link href="//google.com">Google</Link>

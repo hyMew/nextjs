@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import styles from '../styles/style.module.css'
 
 type Props = {
     children?: React.ReactNode
@@ -10,7 +11,7 @@ type Props = {
 export default function Layout({ children, title, description }: Props) {
     const pageTitle = title || 'ホームページタイトル'
     return (
-        <div className="wrap">
+        <div className="{style.wrap}">
             <Head>
                 <title>{ pageTitle }</title>
                 <meta name="description" content={ description || 'ホームページ概要' } />
