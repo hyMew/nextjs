@@ -18,11 +18,11 @@ export default function Home() {
         >
             <div className={styles.contain}>
                 <figure className={index.header}>
-                    <Image src="/images/austin-ramsey-IvzvlKQwjk8-unsplash" alt="sample" />
+                    <Image src="/images/austin-ramsey-IvzvlKQwjk8-unsplash.jpeg" alt="sample" />
                 </figure>
                 <p className={index.ptest}>ホームページコンテンツ</p>
                 <p>いろいろテスト中です。</p>
-                <Link href="//google.com">Google</Link>
+                <Link href="https://google.com/">Google</Link>
                 <figure>
                     <Image src="/images/publicdomainq-0012862vrwktr.jpg" alt="test" width={300} objectFit="contain" />
                 </figure>
