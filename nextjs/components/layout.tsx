@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
+import styles from '../styles/style.module.scss'
 
 type Props = {
     children?: React.ReactNode
@@ -16,16 +18,15 @@ export default function Layout({ children, title, description }: Props) {
                 <meta name="description" content={ description || 'ホームページ概要' } />
                 <meta name="robots" content="noindex, nofollow" />
             </Head>
-            <header>
-                <h1>{ pageTitle }</h1>
+            <header className={styles.header}>
+                <nav className={styles.nav}>
+                    <ul>
+                        <li><Link href="/">Home</Link></li>
+                        <li><Link href="/about">About</Link></li>
+                        <li><Link href="/service">Service</Link></li>
+                    </ul>
+                </nav>
             </header>
-            <nav>
-                <ul>
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/about">About</Link></li>
-                    <li>こちらはテストです</li>
-                </ul>
-            </nav>
             <main>{ children }</main>
             <footer>&copy; Next.js Demo</footer>
         </div>

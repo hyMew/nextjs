@@ -7,28 +7,33 @@ import { useState } from "react"
 
 export default function Home() {
 
-    const [imageUrl, setImageUrl] = useState (
-        "//picsum.photos/400/400?grayscale"
-    );
-
     return (
         <Layout
-            title="This Node"
+            title="index This Node"
             description="ホームページ概要"
         >
             <div className={styles.contain}>
-                <figure className={index.header}>
-                    <Image src="/images/austin-ramsey-IvzvlKQwjk8-unsplash.jpeg" width={300} alt="sample" />
-                </figure>
-                <p className={index.ptest}>ホームページコンテンツ</p>
-                <p>いろいろテスト中です。</p>
-                <Link href="https://google.com/">Google</Link>
-                <figure>
-                    <Image src="/images/publicdomainq-0012862vrwktr.jpg" alt="test" width={300} objectFit="contain" />
-                </figure>
-                <figure className={index.sampleImage}>
-                    <img src={imageUrl} />
-                </figure>
+                <div className={index.header}>
+                    <figure>
+                        <Image src="/images/index-header.jpg" alt="sample" fill />
+                    </figure>
+                    <div className={index.header_box}>
+                        <div>
+                            <p>これはテストです。</p>
+                        </div>
+                    </div>
+                </div>
+                <div className={index.newsLine}>
+                    <div className={index.news_box}>
+                        <p className={index.newsCat}>NEWS</p>
+                        <dl>
+                            <Link href="./">
+                                <span className={index.news_date}>2023年2月20日</span>
+                                <span className={index.news_text}>◯◯◯◯</span>
+                            </Link>
+                        </dl>
+                    </div>
+                </div>
             </div>
         </Layout>
     )
