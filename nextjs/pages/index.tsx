@@ -15,7 +15,7 @@ export default function Home() {
             <div className={styles.contain}>
                 <div className={index.header}>
                     <figure>
-                        <Image src="/images/index-header.jpg" alt="sample" />
+                        <Image src="/images/index-header.jpg" width="300" alt="sample" />
                     </figure>
                     <div className={index.header_box}>
                         <div>
