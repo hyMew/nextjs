@@ -1,4 +1,4 @@
-//import Image from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 import styles from '../styles/style.module.scss'
@@ -15,7 +15,7 @@ export default function Home() {
             <div className={styles.contain}>
                 <div className={index.header}>
                     <figure>
-                        <img src="/images/index-header.jpg" alt="sample" />
+                        <Image src="/images/index-header.jpg" alt="sample" />
                     </figure>
                     <div className={index.header_box}>
                         <div>
