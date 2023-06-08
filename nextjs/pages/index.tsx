@@ -15,7 +15,7 @@ export default function Home() {
             <div className={styles.contain}>
                 <div className={index.header}>
                     <figure>
-                        <Image src="/images/index-header.jpg" width="300" alt="sample" />
+                        <Image src="/images/index-header.jpg" height="340" alt="sample" />
                     </figure>
                     <div className={index.header_box}>
                         <div>
@@ -33,6 +33,11 @@ export default function Home() {
                             </Link>
                         </dl>
                     </div>
+                </div>
+                <div className={index.main}>
+                    <p>
+                        Pタグです。
+                    </p>
                 </div>
             </div>
         </Layout>

@@ -71,12 +71,8 @@ div.header {
 
   }
 }
-.mainBlock {
-  display: flex;
-  &__Left {
-    background: #ccc;
-  }
-  &__Right {
-    
+div.main {
+  p {
+    color: red;
   }
 }
