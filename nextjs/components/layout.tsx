@@ -10,22 +10,32 @@ type Props = {
 }
 
 export default function Layout({ children, title, description }: Props) {
-    const pageTitle = title || 'ホームページタイトル'
+    const pageTitle = title || 'marunakaクリーン 株式会社丸仲'
     return (
         <div>
             <Head>
                 <title>{ pageTitle }</title>
-                <meta name="description" content={ description || 'ホームページ概要' } />
+                <meta name="description" content={ description } />
                 <meta name="robots" content="noindex, nofollow" />
             </Head>
+
             <header className={styles.header}>
-                <nav className={styles.nav}>
-                    <ul>
-                        <li><Link href="/">Home</Link></li>
-                        <li><Link href="/about">About</Link></li>
-                        <li><Link href="/service">Service</Link></li>
-                    </ul>
-                </nav>
+                <div className={styles.inner}>
+                    <a href="./"><div className={styles.logo}></div></a>
+                </div>
+				<nav className={styles.mainNav}>
+					<div className={styles.headName}>
+						<div className={styles.panel}>
+							<ul className={styles.topNav}>
+								<li><p><a href="./">TOP</a></p></li>
+								<li><p><a href="./company">会社案内</a></p></li>
+								<li><p><a href="./service">サービス紹介</a></p></li>
+								<li><p><a href="./recruit">採用情報</a></p></li>
+								<li><p><a href="./contact">お問合せ</a></p></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
             </header>
             <main>{ children }</main>
             <footer>&copy; Next.js Demo</footer>

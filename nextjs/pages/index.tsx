@@ -1,4 +1,4 @@
-import Image from 'next/image'
+//import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 import styles from '../styles/style.module.scss'
@@ -9,14 +9,11 @@ export default function Home() {
 
     return (
         <Layout
-            title="index This Node"
-            description="ホームページ概要"
+            title="トップページ"
+            description="優しく。美しく。笑顔。丸仲へ marunakaクリーンは汚れの悩みをプロの技術・知識・資器材を用い解決いたします。クリーニングの困り事などございましたら、お気軽にご相談ください。"
         >
             <div className={styles.contain}>
                 <div className={index.header}>
-                    <figure>
-                        <Image src="/images/index-header.jpg" height="340" alt="sample" />
-                    </figure>
                     <div className={index.header_box}>
                         <div>
                             <p>これはテストです。</p>
