@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <Layout
             title="トップページ"
-            description="優しく。美しく。笑顔。丸仲へ marunakaクリーンは汚れの悩みをプロの技術・知識・資器材を用い解決いたします。クリーニングの困り事などございましたら、お気軽にご相談ください。"
+            description="test。"
         >
             <div className={styles.contain}>
                 <div className={index.header}>
