@@ -1,9 +1,10 @@
-//import Image from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 import styles from '../styles/style.module.scss'
 import index from '../styles/index.module.scss'
 import { useState } from "react"
+
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
                     <div className={index.header_box}>
                         <div>
                             <p>これはテストです。</p>
+                            <p><Image src="images/sasuga.gif" width={100} height={100} alt="test"></Image></p>
                         </div>
                     </div>
                 </div>
