@@ -18,7 +18,18 @@ export default function Home() {
                     <div className={index.header_box}>
                         <div>
                             <p>これはテストです。</p>
-                            <p><Image src="images/sasuga.gif" width={100} height={100} alt="test"></Image></p>
+                            <p>
+                                <Image
+                                    src="images/sasuga.gif"
+                                    width={100}
+                                    sizes="100vw"
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                    }}
+                                    alt="test">
+                                </Image>
+                            </p>
                         </div>
                     </div>
                 </div>
